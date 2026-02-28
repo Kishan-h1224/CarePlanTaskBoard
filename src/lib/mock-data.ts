@@ -1,0 +1,75 @@
+import { Patient, Task } from "@/types";
+
+export const MOCK_PATIENTS: Patient[] = [
+  {
+    id: 'p1',
+    name: 'John Doe',
+    medicalRecordNumber: 'MRN-10023',
+    lastDialysis: '2023-10-25T08:00:00Z',
+    status: 'stable',
+    bedNumber: '04-A',
+  },
+  {
+    id: 'p2',
+    name: 'Jane Smith',
+    medicalRecordNumber: 'MRN-10045',
+    lastDialysis: '2023-10-25T10:30:00Z',
+    status: 'monitoring',
+    bedNumber: '02-B',
+  },
+  {
+    id: 'p3',
+    name: 'Robert Brown',
+    medicalRecordNumber: 'MRN-10089',
+    lastDialysis: '2023-10-24T14:00:00Z',
+    status: 'critical',
+    bedNumber: '01-A',
+  },
+];
+
+export const MOCK_TASKS: Task[] = [
+  {
+    id: 't1',
+    patientId: 'p1',
+    title: 'Monthly Labs Review',
+    description: 'Review blood work and adjust EPO dosage.',
+    status: 'pending',
+    role: 'nurse',
+    dueDate: new Date().toISOString(),
+    createdAt: '2023-10-20T10:00:00Z',
+    updatedAt: '2023-10-20T10:00:00Z',
+  },
+  {
+    id: 't2',
+    patientId: 'p1',
+    title: 'Dietary Counseling',
+    description: 'Discuss potassium restriction based on recent labs.',
+    status: 'in_progress',
+    role: 'dietician',
+    dueDate: new Date().toISOString(),
+    createdAt: '2023-10-21T09:00:00Z',
+    updatedAt: '2023-10-21T09:00:00Z',
+  },
+  {
+    id: 't3',
+    patientId: 'p2',
+    title: 'Access Check',
+    description: 'Bruit/thrill assessment on fistula.',
+    status: 'completed',
+    role: 'nurse',
+    dueDate: '2023-10-24T10:00:00Z',
+    createdAt: '2023-10-24T08:00:00Z',
+    updatedAt: '2023-10-24T10:00:00Z',
+  },
+  {
+    id: 't4',
+    patientId: 'p3',
+    title: 'Social Work Follow-up',
+    description: 'Transportation assistance coordination.',
+    status: 'pending',
+    role: 'social_worker',
+    dueDate: new Date(Date.now() + 86400000).toISOString(),
+    createdAt: '2023-10-25T07:00:00Z',
+    updatedAt: '2023-10-25T07:00:00Z',
+  },
+];
