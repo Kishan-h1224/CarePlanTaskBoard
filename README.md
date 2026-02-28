@@ -16,8 +16,6 @@ A robust, AI-assisted task management system designed for dialysis center staff.
     ```bash
     npm run dev
     ```
-4.  **Access the app**: Open [http://localhost:9002](http://localhost:9002) in your browser.
-
 ---
 
 ## 🏗️ Architecture Overview
