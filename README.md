@@ -6,8 +6,7 @@ A robust, AI-assisted task management system designed for dialysis center staff.
 
 1.  **Clone the repository**:
     ```bash
-    git clone <your-repo-url>
-    cd renalcare-taskboard
+    git clone <https://github.com/Kishan-h1224/CarePlanTaskBoard.git>
     ```
 2.  **Install dependencies**:
     ```bash
