@@ -2,6 +2,8 @@
 
 A robust, AI-assisted task management system designed for dialysis center staff. Built with a focus on reliability under imperfect network conditions, modular architecture, and extensible data contracts.
 
+**Live Demo:** [care-plan-task-board.vercel.app](https://care-plan-task-board.vercel.app/)
+
 ## 🚀 Quick Setup (Under 5 Minutes)
 
 1.  **Clone the repository**:
