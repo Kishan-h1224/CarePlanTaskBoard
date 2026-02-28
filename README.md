@@ -72,3 +72,18 @@ The application follows a modular, unidirectional data flow pattern designed for
 3.  **Real-time Updates**: Use WebSockets or Firestore listeners to allow multiple staff members to see task updates live.
 4.  **Auth & RBAC**: Integrate Firebase Auth and implement strict role-based views.
 5.  **Offline Support**: Implement Service Workers and IndexedDB for true offline-first capability.
+
+## 🤖 AI Usage
+
+In the development of this project, AI was used sparingly and with careful oversight.
+
+*   **What I used AI for:**
+    *   Generating boilerplate for some of the React components.
+    *   Assisting with debugging minor syntactical errors.
+
+*   **What I reviewed and changed manually:**
+    *   All code suggested by the AI was manually reviewed to ensure it fit the project's architecture and coding standards.
+    *   Boilerplate was adapted to include specific project types and logic.
+
+*   **Example of Disagreement with AI Output:**
+    *   When creating a utility function to format dates, the AI suggested using a large, external library. I disagreed with this suggestion because a simple, lightweight function using native JavaScript `Date` methods was sufficient for the project's needs, avoiding an unnecessary dependency.
